@@ -568,27 +568,13 @@
 			new Device("Kindle Fire 7", "Kindle Fire", "", 7.0, 600, 1024),
 			new Device("Kindle Fire 6", "KFARWI", "", 6.0, 600, 1024),
 			new Device("Kindle Fire 7", "KFAUWI", "", 7.0, 600, 1024),
-			new Device("Kindle Fire HD 7", "KFOT", "", 7.0, 600, 1024),
-			new Device("Kindle Fire HD 7", "KFFOWI", "", 7.0, 600, 1024),
-			new Device("Kindle Fire HD 7", "KFMUWI", "", 7.0, 600, 1024),
-			new Device("Kindle Fire HD 7", "KFTT", "", 7.0, 800, 1280),
-			new Device("Kindle Fire HD 7", "TATE", "", 7.0, 800, 1280),
-			new Device("Kindle Fire HD 7", "KFASWI", "", 7.0, 800, 1280),
-			new Device("Kindle Fire HD 7", "KFSOWI", "", 7.0, 800, 1280),
-			new Device("Kindle Fire HDX 7", "KFTHWA", "", 7.0, 1200, 1920),
-			new Device("Kindle Fire HDX 7", "KFTHWI", "", 7.0, 1200, 1920),
-			new Device("Kindle Fire HD 8", "KFDOWI", "", 8.0, 800, 1280),
-			new Device("Kindle Fire HD 8", "KFGIWI", "", 8.0, 800, 1280),
-			new Device("Kindle Fire HD 8", "KFKAWI", "", 8.0, 800, 1280),
-			new Device("Kindle Fire HD 8", "KFMEWI", "", 8.0, 800, 1280),
-			new Device("Kindle Fire HD 8.9", "JEM", "", 8.9, 1080, 1920),
-			new Device("Kindle Fire HD 8.9", "KFJWA", "", 8.9, 1080, 1920),
-			new Device("Kindle Fire HD 8.9", "KFJWI", "", 8.9, 1080, 1920),
-			new Device("Kindle Fire HDX 8.9", "KFAPWA", "", 8.9, 1600, 2560),
-			new Device("Kindle Fire HDX 8.9", "KFAPWI", "", 8.9, 1600, 2560),
-			new Device("Kindle Fire HDX 8.9", "KFSAWA", "", 8.9, 1600, 2560),
-			new Device("Kindle Fire HD 10", "KFSUWI", "", 10.1, 1200, 1920),
-			new Device("Kindle Fire HD 10", "KFTBWI", "", 10.1, 800, 1280),
+			new Device("Kindle Fire HD 7", ["KFOT", "KFFOWI", "KFMUWI"], "", 7.0, 600, 1024),
+			new Device("Kindle Fire HD 7", ["KFTT", "TATE", "KFASWI", "KFSOWI"], "", 7.0, 800, 1280),
+			new Device("Kindle Fire HDX 7", ["KFTHWA", "KFTHWI"], "", 7.0, 1200, 1920),
+			new Device("Kindle Fire HD 8", ["KFDOWI", "KFGIWI", "KFKAWI", "KFMEWI"], "", 8.0, 800, 1280),
+			new Device("Kindle Fire HD 8.9", ["JEM", "KFJWA", "KFJWI"], "", 8.9, 1080, 1920),
+			new Device("Kindle Fire HDX 8.9", ["KFAPWA", "KFAPWI", "KFSAWA"], "", 8.9, 1600, 2560),
+			new Device("Kindle Fire HD 10", ["KFSUWI", "KFTBWI"], "", 10.1, 1200, 1920),
 			new Device("Amazon Fire Phone", "SD4930UR", "", 4.7, 312, 1280),
 				// NOTE : Unknow kindle = KF****
 			// ANDROID TABLET
@@ -602,7 +588,7 @@
 			new Device("Archos 70c Cobalt", "Archos 70c Cobalt", "", 7.0, 600, 1024),
 			new Device("Archos 80b Xenon", "Archos 80b Xenon", "", 8.0, 800, 1280),
 			new Device("Archos 90 Neon", "Archos 90 Neon", "", 9.0, 480, 800),
-			new Device("Archos 90 Neon", "Archos 90b Neon", "", 9.0, 600, 1024),
+			new Device("Archos 90b Neon", "Archos 90b Neon", "", 9.0, 600, 1024),
 			new Device("Archos 101 Copper", "Archos 101 Copper", "", 10.1, 600, 1024),
 			new Device("Arnova 7", "ARNOVA 7", "", 7.0, 480, 800),
 			new Device("Arnova 8", "ARNOVA 8", "", 8.0, 600, 800),
@@ -649,85 +635,48 @@
 			new Device("HCL ME Connect V3", "Connect-V3 Build/HCL", "", 7.0, 480, 800),
 			// HUAWEI TABLET (credible model or verified id only)
 				// Modern MatePad
-			new Device("Huawei MatePad Pro 12.6 (2021)", "WGR-W09", "", 12.6, 1600, 2560),
-			new Device("Huawei MatePad Pro 12.6 (2021)", "WGR-W19", "", 12.6, 1600, 2560),
-			new Device("Huawei MatePad Pro 12.6 (2021)", "WGR-AN19", "", 12.6, 1600, 2560),
+			new Device("Huawei MatePad Pro 12.6 (2021)", ["WGR-W09", "WGR-W19", "WGR-AN19"], "", 12.6, 1600, 2560),
 			new Device("Huawei MatePad Pro 10.8 (2021)", "MRR-W29", "", 10.8, 1600, 2560),
 			//new Device("Huawei MatePad Pro 10.8 5G (2019)", "SCMR-AL00", "", 10.8, 1600, 2560),
-			new Device("Huawei MatePad 10.8 (2020)", "SCMR-W09", "", 10.8, 1600, 2560),
-			new Device("Huawei MatePad 10.8 (2020)", "SCMR-AL00", "", 10.8, 1600, 2560),
-			new Device("Huawei MatePad 10.8 (2019)", "MRX-AL09", "", 10.8, 1600, 2560),
-			new Device("Huawei MatePad 10.8 (2019)", "MRX-AL19", "", 10.8, 1600, 2560),
-			new Device("Huawei MatePad 10.8 (2019)", "MRX-W09", "", 10.8, 1600, 2560),
-			new Device("Huawei MatePad 10.8 (2019)", "MRX-W19", "", 10.8, 1600, 2560),
+			new Device("Huawei MatePad 10.8 (2020)", ["SCMR-W09", "SCMR-AL00"], "", 10.8, 1600, 2560),
+			new Device("Huawei MatePad 10.8 (2019)", ["MRX-AL09", "MRX-AL19", "MRX-W09", "MRX-W19"], "", 10.8, 1600, 2560),
 			new Device("Huawei MatePad 5G", "BAH3-AN10", "", 10.4, 1200, 2000),
-			new Device("Huawei MatePad", "BAH3-W09", "", 10.4, 1200, 2000),
-			new Device("Huawei MatePad", "BAH3-AL00", "", 10.4, 1200, 2000),
-			new Device("Huawei MatePad", "BAH3-L09", "", 10.4, 1200, 2000),
+			new Device("Huawei MatePad", ["BAH3-W09", "BAH3-AL00", "BAH3-L09"], "", 10.4, 1200, 2000),
 			// new Device("Huawei MatePad Pro 11 (2021)", "MRR-W29", "", 10.8, 1600, 2560),
 			new Device("Huawei Enjoy Tablet 2", "AGS3-W00D", "", 10.1, 1200, 1920),
 				// Series M
 			//new Device("Huawei MatePad M6 10.8", "MRX-W19", "", 10.8, 1600, 2560),
-			new Device("Huawei MatePad M6 Turbo 8.4", "VRD-AL10", "", 8.4, 1600, 2560),
-			new Device("Huawei MatePad M6 Turbo 8.4", "VRD-W10", "", 8.4, 1600, 2560),
-			new Device("Huawei MatePad M6 Turbo 8.4", "VRD-W09", "", 8.4, 1600, 2560),
+			new Device("Huawei MatePad M6 Turbo 8.4", ["VRD-AL10", "VRD-W10", "VRD-W09"], "", 8.4, 1600, 2560),
 			//new Device("Huawei MatePad M6 8.4", "VRD-W09", "", 8.4, 1600, 2560),
-			new Device("Huawei MediaPad M5 Pro 10.8", "CMR-AL19", "", 10.8, 1600, 2560),
-			new Device("Huawei MediaPad M5 Pro 10.8", "CMR-W19", "", 10.8, 1600, 2560),
-			new Device("Huawei MediaPad M5 10.8", "CMR-AL09", "", 10.8, 1600, 2560),
-			new Device("Huawei MediaPad M5 10.8", "CMR-W09", "", 10.8, 1600, 2560),
-			new Device("Huawei MediaPad M5 lite", "BAH2-L09", "", 10.1, 1200, 1920),
-			new Device("Huawei MediaPad M5 lite", "BAH2-W09", "", 10.1, 1200, 1920),
-			new Device("Huawei MediaPad M5 lite", "BAH2-W19", "", 10.1, 1200, 1920),
-			new Device("Huawei MediaPad M5 8", "SHT-AL09", "", 8.4, 1600, 2560),
-			new Device("Huawei MediaPad M5 8", "SHT-W09", "", 8.4, 1600, 2560),
+			new Device("Huawei MediaPad M5 Pro 10.8", ["CMR-AL19", "CMR-W19"], "", 10.8, 1600, 2560),
+			new Device("Huawei MediaPad M5 10.8", ["CMR-AL09", "CMR-W09"], "", 10.8, 1600, 2560),
+			new Device("Huawei MediaPad M5 Lite", ["BAH2-L09", "BAH2-W09", "BAH2-W19"], "", 10.1, 1200, 1920),
+			new Device("Huawei MediaPad M5 8", ["SHT-AL09", "SHT-W09"], "", 8.4, 1600, 2560),
 			new Device("Huawei MediaPad M5 Lite 8", "JDN2-L09", "", 8.0, 1200, 1920),
-			new Device("Huawei MediaPad M3 Lite 10", "Bach-L09", "", 10.1, 1200, 1920),
-			new Device("Huawei MediaPad M3 Lite 10", "Bach-W09", "", 10.1, 1200, 1920),
-			new Device("Huawei MediaPad M3 8.4", "BTV-DL09", "", 8.4, 1600, 2560),
-			new Device("Huawei MediaPad M3 8.4", "BTV-W09", "", 8.4, 1600, 2560),
-			new Device("Huawei MediaPad M3 Lite 8", "CPN-AL00", "", 8.0, 1200, 1920),
-			new Device("Huawei MediaPad M3 Lite 8", "CPN-W09", "", 8.0, 1200, 1920),
-			new Device("Huawei MediaPad M3 Lite 8", "CPN-L09", "", 8.0, 1200, 1920),
-			new Device("Huawei MediaPad M2 10.1", "M2-A01W", "", 10.1, 1200, 1920),
-			new Device("Huawei MediaPad M2 10.1", "M2-A01L", "", 10.1, 1200, 1920),
+			new Device("Huawei MediaPad M3 Lite 10", ["Bach-L09", "Bach-W09"], "", 10.1, 1200, 1920),
+			new Device("Huawei MediaPad M3 8.4", ["BTV-DL09", "BTV-W09"], "", 8.4, 1600, 2560),
+			new Device("Huawei MediaPad M3 Lite 8", ["CPN-AL00", "CPN-W09", "CPN-L09"], "", 8.0, 1200, 1920),
+			new Device("Huawei MediaPad M2 10.1", ["M2-A01W", "M2-A01L"], "", 10.1, 1200, 1920),
 			new Device("Huawei MediaPad M2 8.0", "M2-801L", "", 8.0, 1200, 1920),
 			//new Device("Huawei MediaPad M2 7.0", "FDR-A01L", "", 7.0, 1200, 1920),
 				// Series T
-			new Device("Huawei MatePad T 10S", "AGS3-L09", "", 10.1, 1200, 1920),
-			new Device("Huawei MatePad T 10S", "AGS3-W09", "", 10.1, 1200, 1920),
-			new Device("Huawei MediaPad T5", "AGS2-W09", "", 10.1, 1200, 1920),
-			new Device("Huawei MediaPad T5", "AGS2-W19", "", 10.1, 1200, 1920),
-			new Device("Huawei MediaPad T5", "AGS2-L09", "", 10.1, 1200, 1920),
-			new Device("Huawei MediaPad T3 10", "AGS-W09", "", 9.6, 800, 1280),
-			new Device("Huawei MediaPad T3 10", "AGS-L09", "", 9.6, 800, 1280),
-			new Device("Huawei MediaPad T3 10", "AGS-L03", "", 9.6, 800, 1280),
-			new Device("Huawei MediaPad T3 8.0", "KOB-L09", "", 8.0, 800, 1280),
-			new Device("Huawei MediaPad T3 8.0", "KOB-W09", "", 8.0, 800, 1280),
-			new Device("Huawei MediaPad T3 7.0", "BG2-U01", "", 7.0, 600, 1024),
-			new Device("Huawei MediaPad T3 7.0", "BG2-W09", "", 7.0, 600, 1024),
-			new Device("Huawei MediaPad T3 7.0", "BG2-U03", "", 7.0, 600, 1024),
-			new Device("Huawei MediaPad T2 10.0 Pro", "FDR-A01L", "", 10.0, 1200, 1920),
-			new Device("Huawei MediaPad T2 10.0 Pro", "FDR-A03L", "", 10.0, 1200, 1920),
-			new Device("Huawei MediaPad T2 10.0 Pro", "FDR-A04L", "", 10.0, 1200, 1920),
-			new Device("Huawei MediaPad T2 Pro 7.0", "PLE-701L", "", 7.0, 1080, 1920),
-			new Device("Huawei MediaPad T2 Pro 7.0", "PLE-703L", "", 7.0, 1080, 1920),
-			new Device("Huawei MediaPad T2 7.0", "BGO-DL09", "", 7.0, 600, 1024),
-			new Device("Huawei MediaPad T2 7.0", "BGO-L03", "", 7.0, 600, 1024),
-			new Device("Huawei MediaPad T1 Plus 7.0", "T1-701ua", "", 7.0, 600, 1024),
+			new Device("Huawei MatePad T 10S", ["AGS3-L09", "AGS3-W09"], "", 10.1, 1200, 1920),
+			new Device("Huawei MediaPad T5", ["AGS2-W09", "AGS2-W19", "AGS2-L09"], "", 10.1, 1200, 1920),
+			new Device("Huawei MediaPad T3 10", ["AGS-W09", "AGS-L09", "AGS-L03"], "", 9.6, 800, 1280),
+			new Device("Huawei MediaPad T3 8.0", ["KOB-L09", "KOB-W09"], "", 8.0, 800, 1280),
+			new Device("Huawei MediaPad T3 7.0", ["BG2-U01", "BG2-W09", "BG2-U03"], "", 7.0, 600, 1024),
+			new Device("Huawei MediaPad T2 10.0 Pro", ["FDR-A01L", "FDR-A03L", "FDR-A04L"], "", 10.0, 1200, 1920),
+			new Device("Huawei MediaPad T2 Pro 7.0", ["PLE-701L", "PLE-703L"], "", 7.0, 1080, 1920),
+			new Device("Huawei MediaPad T2 7.0", ["BGO-DL09", "BGO-L03"], "", 7.0, 600, 1024),
 			new Device("Huawei MediaPad T1 Plus 7.0", "T1-701u", "", 7.0, 600, 1024),
 			//new Device("Huawei MediaPad T1 7.0", "T1-701ua", "", 7.0, 600, 1024),
 			new Device("Huawei MediaPad T1 10", "T1-A21L", "", 9.6, 800, 1280),
 			//new Device("Huawei MediaPad T1 8", "T1-A21L", "", 8.0, 800, 1280),
 				// Series X
-			new Device("Huawei MediaPad X2", "GEM-703L", "", 7.0, 1200, 1920),
-			new Device("Huawei MediaPad X2", "GEM-702L", "", 7.0, 1200, 1920),
-			new Device("Huawei MediaPad X2", "GEM-701L", "", 7.0, 1200, 1920),
+			new Device("Huawei MediaPad X2", ["GEM-701L", "GEM-702L", "GEM-703L"], "", 7.0, 1200, 1920),
 				// Old ones
-			new Device("Huawei EE Eagle", "Eagle Build", "", 8.0, 800, 1200),
-			new Device("Huawei EE Eagle", "Eagle_4G Build", "", 8.0, 800, 1200),
-			new Device("Huawei MediaPad 7", "MediaPad 7 Youth", "", 7.0, 600, 1024),
-			new Device("Huawei MediaPad 7", "MediaPad 7 Lite II", "", 7.0, 600, 1024),
+			new Device("Huawei EE Eagle", ["Eagle Build", "Eagle_4G Build"], "", 8.0, 800, 1200),
+			new Device("Huawei MediaPad 7", ["MediaPad 7 Youth", "MediaPad 7 Lite II"], "", 7.0, 600, 1024),
 			new Device("Huawei MediaPad 10", "MediaPad 10 LINK", "", 10.1, 800, 1200),
 			new Device("Huawei MediaPad M1", "MediaPad M1 8.0", "", 8.0, 800, 1200),
 			// LENOVO
@@ -735,10 +684,8 @@
 			new Device("Lenovo S5000", "Lenovo S5000", "", 7.0, 800, 1280),
 			new Device("Lenovo IdeaPad A1", "; A1_07 Build", "", 7.0, 600, 1024),
 			new Device("Lenovo IdeaTab S6000H", "IdeaTab S6000-H", "", 10.1, 800, 1280),
-			new Device("Lenovo IdeaPad K1", "Ideapad K1", "", 10.1, 800, 1280),
-			new Device("Lenovo IdeaPad K1", "; K1 Build", "", 10.1, 800, 1280),
-			new Device("Lenovo IdeaPad S2", "Ideapad S2", "", 10.0, 800, 1280), // experimental
-			new Device("Lenovo IdeaPad S2", "; S2 Build", "", 10.0, 800, 1280), // experimental
+			new Device("Lenovo IdeaPad K1", ["Ideapad K1", "; K1 Build"], "", 10.1, 800, 1280),
+			new Device("Lenovo IdeaPad S2", ["Ideapad S2", "; S2 Build"], "", 10.0, 800, 1280), // experimental
 			// Lenovo LePad S2010
 			// Lenovo LePad S2007
 				// Lenovo Pad
@@ -757,8 +704,7 @@
 			new Device("Lenovo A7-50 A3500", "Lenovo A3500", "", 7.0, 800, 1280),
 			new Device("Lenovo A7-30 A3300", "Lenovo A3500", "", 7.0, 600, 1024),
 				// Yoga Series
-			new Device("Lenovo Yoga Tab 3 Plus", "YT-X703", "", 10.1, 1600, 2560), // experimental
-			new Device("Lenovo Yoga Tab 3 Plus", "YT-X703F", "", 10.1, 1600, 2560),
+			new Device("Lenovo Yoga Tab 3 Plus", "YT-X703", "", 10.1, 1600, 2560), // experimental F
 			new Device("Lenovo Yoga Tab 3 Pro", "YT3-X90F", "", 10.1, 1600, 2560),
 			new Device("Lenovo Yoga Tablet 2 10.1", "YOGA Tablet 2-1050", "", 10.1, 1200, 1920),
 			new Device("Lenovo Yoga Tablet 2 8.0", "YOGA Tablet 2-830", "", 8.0, 1200, 1920),
@@ -779,15 +725,9 @@
 			new Device("Lenovo Tab4 8 Plus", "TB-8704", "", 8.0, 1200, 1920), // experimental (F, X)
 			new Device("Lenovo Tab4 8", "TB-8504", "", 8.0, 800, 1280), // experimental (F, X)
 			new Device("Lenovo Tab3 10", "TB3-X70L", "", 10.1, 1200, 1920), // experimental
-			new Device("Lenovo Tab3 10", "TB3-X70L", "", 10.1, 1200, 1920), // todo : probably insufficient
 			new Device("Lenovo Tab3 8 Plus", "TB-8703", "", 8.0, 1200, 1920), // experimental (F, X)
-			new Device("Lenovo Tab3 8", "TB3-850", "", 8.0, 800, 1280), // experimental
-			new Device("Lenovo Tab3 8", "TB3-850F", "", 8.0, 800, 1280),
-			new Device("Lenovo Tab3 8", "TB3-850M", "", 8.0, 800, 1280),
-			new Device("Lenovo Tab3 7", "; TB3-710I", "", 7.0, 600, 1024),
-			new Device("Lenovo Tab3 7", "; TB-7703X", "", 7.0, 600, 1024),
-			new Device("Lenovo Tab3 7", "; TB3-730X", "", 7.0, 600, 1024),
-			new Device("Lenovo Tab3 7", "; TB3-710F", "", 7.0, 600, 1024),
+			new Device("Lenovo Tab3 8", "TB3-850", "", 8.0, 800, 1280), // experimental "", F, M
+			new Device("Lenovo Tab3 7", ["; TB3-710I", "; TB-7703X", "; TB3-730X", "; TB3-710F"], "", 7.0, 600, 1024),
 			new Device("Lenovo Tab 2 A10-70", "Lenovo Tab 2 A10-70", "", 10.1, 1200, 1920),
 			new Device("Lenovo Tab 2 A7-30", "Lenovo Tab 2 A7-30", "", 7.0, 600, 1024),
 			new Device("Lenovo Tab 2 A7-20", "Lenovo Tab 2 A7-20", "", 7.0, 600, 1024),
@@ -806,13 +746,10 @@
 
 
 			// NOOK
-			new Device("Nook Color", "NOOK BNRV200", "", 7.0, 600, 1024),
-			new Device("Nook Color", "NookColor", "", 7.0, 600, 1024),
+			new Device("Nook Color", ["NookColor", "NOOK BNRV200"], "", 7.0, 600, 1024),
 			new Device("Nook 7", "NOOK BNTV250", "", 7.0, 600, 1024),
-			new Device("Nook HD", "BN NookHD)", "", 7.0, 900, 1440),
+			new Device("Nook HD+", ["BN NookHD+", "NOOK BNTV600"], "", 8.9, 1080, 1920),
 			new Device("Nook HD", "BN NookHD", "", 7.0, 900, 1440),
-			new Device("Nook HD+", "BN NookHD+", "", 8.9, 1080, 1920),
-			new Device("Nook HD+", "NOOK BNTV600", "", 8.9, 1080, 1920),
 			new Device("Nook 10.1", "BNTV650", "", 10.1, 1200, 1920),
 			// HP
 			new Device("HP 7", "HP 7 Build", "", 7.0, 800, 1280),
@@ -837,158 +774,57 @@
 			new Device("Xiaomi Mi Pad 4 Plus", "MI PAD 4 PLUS", "", 10.1, 1200, 1920),
 			// SAMSUNG TABLETS
 				// Old Galaxy Tab
-			new Device("Samsung Galaxy Tab 7.0", "GT-P1000", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 7.0", "GT-P1010", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 7.0", "SGH-T849", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 7.0", "SCH-I800", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 2 7.0", "GT-P3100", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 2 7.0", "GT-P3110", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 2 7.0", "SCH-I705", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 3 7.0", "SM-T210", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 3 7.0", "SM-T211", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 3 7.0", "SM-T215", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 3 7.0", "SM-T217", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 3 7.0", "GT-P3200", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 3 7.0", "GT-P3210", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 3 7.0", "GT-P3220", "", 7.0, 600, 1024),
+			new Device("Samsung Galaxy Tab 7.0", ["GT-P1000", "GT-P1010", "SGH-T849", "SCH-I800"], "", 7.0, 600, 1024),
+			new Device("Samsung Galaxy Tab 2 7.0", ["GT-P3100", "GT-P3110", "SCH-I705"], "", 7.0, 600, 1024),
 			new Device("Samsung Galaxy Tab 3 Kids", "SM-T2105", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 3 7.0", "SM-T21", "", 7.0, 600, 1024), // shorter, risk of confusion ?
+			new Device("Samsung Galaxy Tab 3 7.0", ["SM-T21", "GT-P32", "GT-P32", "GT-P32"], "", 7.0, 600, 1024), // exp 0,1,5,7 ; 00,10,20
 			new Device("Samsung Galaxy Tab Plus 7.0", "GT-P6200", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab Lite 7.0", "SM-T110", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab Lite 7.0", "SM-T111", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab Lite 7.0", "SM-T112", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab Lite 7.0", "SM-T113", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab Lite 7.0", "SM-T116", "", 7.0, 600, 1024),
-			new Device("Samsung Galaxy Tab 4 7.0", "SM-T230", "", 7.0, 800, 1280),
-			new Device("Samsung Galaxy Tab 4 7.0", "SM-T231", "", 7.0, 800, 1280),
-			new Device("Samsung Galaxy Tab 4 7.0", "SM-T235", "", 7.0, 800, 1280),
+			new Device("Samsung Galaxy Tab Lite 7.0", "SM-T11", "", 7.0, 600, 1024), // exp : 0,1,2,3,6 
+			new Device("Samsung Galaxy Tab 4 7.0", ["SM-T230", "SM-T231", "SM-T235"], "", 7.0, 800, 1280),
 			new Device("Samsung Galaxy Tab 4 Lite 7.0", "SM-T239", "", 7.0, 800, 1280),
 			new Device("Samsung Galaxy Tab 7.7", "GT-P6800", "", 7.7, 800, 1024),
-			new Device("Samsung Galaxy Tab 3 8.0", "SM-T310", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab 3 8.0", "SM-T311", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab 3 8.0", "SM-T315", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab 4 8.0", "SM-T330", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab 4 8.0", "SM-T331", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab 4 8.0", "SM-T335", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab 4 8.0", "SM-T337", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab 8.9", "GT-P7300 ", "", 8.9, 800, 1280),
-			new Device("Samsung Galaxy Tab 8.9", "GT-P7310 ", "", 8.9, 800, 1280),
-			new Device("Samsung Galaxy Tab 10.1", "GT-P7100", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Tab 10.1", "GT-P7500", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Tab 10.1", "GT-P7501", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Tab 10.1", "GT-P7510", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Tab 10.1", "GT-P7511", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Tab 10.1", "SCH-I905", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Tab 10.1", "SGH-T859", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Tab 2 10.1", "GT-P5100", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Tab 2 10.1", "GT-P5110", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Tab 3 10.1", "GT-P5200", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Tab 3 10.1", "GT-P5210", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Tab 3 10.1", "GT-P5220", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Tab 4 10.1", "SM-T530", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Tab 4 10.1", "SM-T531", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Tab 4 10.1", "SM-T535", "", 10.1, 800, 1280),
+			new Device("Samsung Galaxy Tab 3 8.0", "SM-T31", "", 8.0, 800, 1280), // exp : 0,1,5
+			new Device("Samsung Galaxy Tab 4 8.0", "SM-T33", "", 8.0, 800, 1280), // exp : 0,1,3,5
+			new Device("Samsung Galaxy Tab 8.9", ["GT-P7300", "GT-P7310"], "", 8.9, 800, 1280),
+			new Device("Samsung Galaxy Tab 10.1", ["GT-P7100", "GT-P7500", "GT-P7501", "GT-P7510", "GT-P7511", "SCH-I905", "SGH-T859"], "", 10.1, 800, 1280),
+			new Device("Samsung Galaxy Tab 2 10.1", ["GT-P5100", "GT-P5110"], "", 10.1, 800, 1280),
+			new Device("Samsung Galaxy Tab 3 10.1", ["GT-P5200", "GT-P5210", "GT-P5220"], "", 10.1, 800, 1280),
+			new Device("Samsung Galaxy Tab 4 10.1", "SM-T53", "", 10.1, 800, 1280), // exp : 0,1,5
 				// Galaxy Tab Pro
-			new Device("Samsung Galaxy Tab Pro 8.4", "SM-T320", "", 8.4, 1600, 2560),
-			new Device("Samsung Galaxy Tab Pro 8.4", "SM-T321", "", 8.4, 1600, 2560),
-			new Device("Samsung Galaxy Tab Pro 8.4", "SM-T325", "", 8.4, 1600, 2560),
+			new Device("Samsung Galaxy Tab Pro 8.4", "SM-T32", "", 8.4, 1600, 2560), // exp : 0,1,5
 			new Device("Samsung Galaxy Tab Pro 10.1", "SM-T520", "", 10.1, 1600, 2560),
-			new Device("Samsung Galaxy Tab Pro 4 10.1", "SM-T525", "", 10.1, 1600, 2560),
-			new Device("Samsung Galaxy Tab Pro 4 12.2", "SM-T900", "", 12.2, 1600, 2560),
-			new Device("Samsung Galaxy Tab Pro 4 12.2", "SM-T905", "", 12.2, 1600, 2560),
+			new Device("Samsung Galaxy Tab Pro 4 10.1", ["SM-T525", "SM-T900", "SM-T905"], "", 10.1, 1600, 2560),
 				// Galaxy Tab S
-			new Device("Samsung Galaxy Tab S2 8.0", "SM-T710", "", 8.0, 1536, 2048),
-			new Device("Samsung Galaxy Tab S2 8.0", "SM-T715", "", 8.0, 1536, 2048),
-			new Device("Samsung Galaxy Tab S2 8.0", "SM-T719", "", 8.0, 1536, 2048),
-			new Device("Samsung Galaxy Tab S 8.4", "SM-T700", "", 8.4, 1600, 2560),
-			new Device("Samsung Galaxy Tab S 8.4", "SM-T705", "", 8.4, 1600, 2560),
-			new Device("Samsung Galaxy Tab S 8.4", "SM-T707", "", 8.4, 1600, 2560), // SM-T707V
-			new Device("Samsung Galaxy Tab S2 9.7", "SM-T810", "", 9.7, 1536, 2048),
-			new Device("Samsung Galaxy Tab S2 9.7", "SM-T815", "", 9.7, 1536, 2048),
-			new Device("Samsung Galaxy Tab S2 9.7", "SM-T817", "", 9.7, 1536, 2048),
-			new Device("Samsung Galaxy Tab S3 9.7", "SM-T820", "", 9.7, 1536, 2048),
-			new Device("Samsung Galaxy Tab S3 9.7", "SM-T825", "", 9.7, 1536, 2048),
-			new Device("Samsung Galaxy Tab S 10.1", "SM-T800", "", 10.5, 1600, 2560),
-			new Device("Samsung Galaxy Tab S 10.1", "SM-T805", "", 10.5, 1600, 2560),
-			new Device("Samsung Galaxy Tab S 10.1", "SM-T807", "", 10.5, 1600, 2560),
-			new Device("Samsung Galaxy Tab S4 10.5", "SM-T830", "", 10.5, 1600, 2560),
-			new Device("Samsung Galaxy Tab S4 10.5", "SM-T835", "", 10.5, 1600, 2560),
-			new Device("Samsung Galaxy Tab S5e", "SM-T720", "", 10.5, 1600, 2560),
-			new Device("Samsung Galaxy Tab S5e", "SM-T721", "", 10.5, 1600, 2560),
-			new Device("Samsung Galaxy Tab S5e", "SM-T725", "", 10.5, 1600, 2560),
-			new Device("Samsung Galaxy Tab S5e", "SM-T727", "", 10.5, 1600, 2560),
-			new Device("Samsung Galaxy Tab S6", "SM-T860", "", 10.5, 1600, 2560),
-			new Device("Samsung Galaxy Tab S6", "SM-T861", "", 10.5, 1600, 2560),
-			new Device("Samsung Galaxy Tab S6", "SM-T865", "", 10.5, 1600, 2560),
-			new Device("Samsung Galaxy Tab S6", "SM-T866", "", 10.5, 1600, 2560),
-			new Device("Samsung Galaxy Tab S6", "SM-T867", "", 10.5, 1600, 2560),
-			new Device("Samsung Galaxy Tab S6", "SM-T86", "", 10.5, 1600, 2560), // shorter, risk of confusion ?
-			new Device("Samsung Galaxy Tab S6 Lite", "SM-P610", "", 10.4, 1200, 2000),
-			new Device("Samsung Galaxy Tab S6 Lite", "SM-P615", "", 10.4, 1200, 2000),
-			new Device("Samsung Galaxy Tab S6 Lite", "SM-P617", "", 10.4, 1200, 2000),
-			new Device("Samsung Galaxy Tab S7", "SM-T870", "", 11.0, 1600, 2560),
-			new Device("Samsung Galaxy Tab S7", "SM-T875", "", 11.0, 1600, 2560),
-			new Device("Samsung Galaxy Tab S7", "SM-T876", "", 11.0, 1600, 2560),
-			new Device("Samsung Galaxy Tab S7 FE", "SM-T730", "", 12.4, 1600, 2560),
-			new Device("Samsung Galaxy Tab S7 FE", "SM-T736", "", 12.4, 1600, 2560),
-			new Device("Samsung Galaxy Tab S7+", "SM-T970", "", 12.4, 1752, 2800),
-			new Device("Samsung Galaxy Tab S7+", "SM-T976", "", 12.4, 1752, 2800),
+			new Device("Samsung Galaxy Tab S2 8.0", "SM-T71", "", 8.0, 1536, 2048), // exp : 0,5,9
+			new Device("Samsung Galaxy Tab S 8.4", "SM-T70", "", 8.4, 1600, 2560), // exp : 0,5,7,7V
+			new Device("Samsung Galaxy Tab S2 9.7", ["SM-T81", "SM-T82"], "", 9.7, 1536, 2048), // exp : 10,15,17,20,25
+			new Device("Samsung Galaxy Tab S 10.1", "SM-T80", "", 10.5, 1600, 2560), // exp : 0,5,7
+			new Device("Samsung Galaxy Tab S4 10.5", "SM-T83", "", 10.5, 1600, 2560), // exp : 0,5
+			new Device("Samsung Galaxy Tab S5e", "SM-T72", "", 10.5, 1600, 2560), // exp : 0,1,5,7
+			new Device("Samsung Galaxy Tab S6", "SM-T86", "", 10.5, 1600, 2560), // exp : 0,1,5,6,7
+			new Device("Samsung Galaxy Tab S6 Lite", "SM-P61", "", 10.4, 1200, 2000), // exp : 0,5,7
+			new Device("Samsung Galaxy Tab S7", "SM-T87", "", 11.0, 1600, 2560), // exp : 0,5,6
+			new Device("Samsung Galaxy Tab S7 FE", "SM-T73", "", 12.4, 1600, 2560), // exp : 0,6
+			new Device("Samsung Galaxy Tab S7+", "SM-T97", "", 12.4, 1752, 2800), // exp : 0,6
 				// Galaxy Tab A
-			new Device("Samsung Galaxy Tab A 7.0", "SM-T280", "", 7.0, 800, 1280),
-			new Device("Samsung Galaxy Tab A 7.0", "SM-T285", "", 7.0, 800, 1280),
-			new Device("Samsung Galaxy Tab A 8.0", "SM-T350", "", 8.0, 768, 1024),
-			new Device("Samsung Galaxy Tab A 8.0", "SM-T355", "", 8.0, 768, 1024),
-			new Device("Samsung Galaxy Tab A 8.0", "SM-P350", "", 8.0, 768, 1024),
-			new Device("Samsung Galaxy Tab A 8.0", "SM-P355", "", 8.0, 768, 1024),
-			new Device("Samsung Galaxy Tab A 8.0", "SM-T380", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab A 8.0", "SM-T385", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab A 8.0", "SM-T387", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab A 8.0", "SM-P205", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab A 8.0", "SM-T290", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab A 8.0", "SM-T295", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab A 8.0", "SM-T297", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab A 8.4", "SM-T305", "", 8.4, 800, 1280),
-			new Device("Samsung Galaxy Tab A 8.4", "SM-T307", "", 8.4, 800, 1280),
-			new Device("Samsung Galaxy Tab A 9.7", "SM-T550", "", 8.0, 768, 1024),
-			new Device("Samsung Galaxy Tab A 9.7", "SM-T555", "", 8.0, 768, 1024),
-			new Device("Samsung Galaxy Tab A 9.7", "SM-P550", "", 8.0, 768, 1024),
-			new Device("Samsung Galaxy Tab A 9.7", "SM-P555", "", 8.0, 768, 1024),
-			new Device("Samsung Galaxy Tab A 10.1", "SM-T580", "", 10.1, 1200, 1920),
-			new Device("Samsung Galaxy Tab A 10.1", "SM-T510", "", 10.1, 1200, 1920),
-			new Device("Samsung Galaxy Tab A 10.1", "SM-T585", "", 10.1, 1200, 1920),
-			new Device("Samsung Galaxy Tab A 10.1", "SM-T515", "", 10.1, 1200, 1920),
-			new Device("Samsung Galaxy Tab A 10.1", "SM-P580", "", 10.1, 1200, 1920),
-			new Device("Samsung Galaxy Tab A 10.1", "SM-P585", "", 10.1, 1200, 1920),
-			new Device("Samsung Galaxy Tab A7 Lite", "SM-T220", "", 8.7, 800, 1340),
-			new Device("Samsung Galaxy Tab A7 Lite", "SM-T225", "", 8.7, 800, 1340),
-			new Device("Samsung Galaxy Tab A7 Lite", "SM-T227", "", 8.7, 800, 1340),
-			new Device("Samsung Galaxy Tab A7", "SM-T500", "", 10.4, 1200, 2000),
-			new Device("Samsung Galaxy Tab A7", "SM-T505", "", 10.4, 1200, 2000),
-			new Device("Samsung Galaxy Tab A7", "SM-T507", "", 10.4, 1200, 2000),
-			new Device("Samsung Galaxy Tab A 10.5", "SM-T590", "", 10.5, 1200, 1920),
-			new Device("Samsung Galaxy Tab A 10.5", "SM-T595", "", 10.5, 1200, 1920),
-			new Device("Samsung Galaxy Tab A 10.5", "SM-P590", "", 10.5, 1200, 1920),
-			new Device("Samsung Galaxy Tab A 10.5", "SM-P595", "", 10.5, 1200, 1920),
+			new Device("Samsung Galaxy J Max", "SM-T285YD", "", 7.0, 800, 1280), // same than Tab A 7.0
+			new Device("Samsung Galaxy Tab A 7.0", "SM-T28", "", 7.0, 800, 1280), // exp : 0,5
+			new Device("Samsung Galaxy Tab A 8.0", ["SM-T35", "SM-P35"], "", 8.0, 768, 1024), // exp : 0,5 (x2)
+			new Device("Samsung Galaxy Tab A 8.0", ["SM-T38", "SM-P20", "SM-T29"], "", 8.0, 800, 1280), // exp : 0,5,7 ; 5 ; 0,5,7
+			new Device("Samsung Galaxy Tab A 8.4", "SM-T30", "", 8.4, 800, 1280), // exp : 5,7
+			new Device("Samsung Galaxy Tab A 9.7", ["SM-T55", "SM-P55"], "", 8.0, 768, 1024), // exp : 0,5 (x2)
+			new Device("Samsung Galaxy Tab A 10.1", ["SM-T58", "SM-T51", "SM-P58"], "", 10.1, 1200, 1920), // exp : 0,5 (x3)
+			new Device("Samsung Galaxy Tab A7 Lite", "SM-T22", "", 8.7, 800, 1340), // exp : 0,5,7
+			new Device("Samsung Galaxy Tab A7", "SM-T50", "", 10.4, 1200, 2000), // exp : 0,5,7
+			new Device("Samsung Galaxy Tab A 10.5", ["SM-T59", "SM-P59"], "", 10.5, 1200, 1920), // exp : 0,5 (x2)
 				// Galaxy Tab E
-			new Device("Samsung Galaxy Tab E 8.0", "SM-T375", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab E 8.0", "SM-T377", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Tab E 9.6", "SM-T560", "", 9.6, 800, 1280),
-			new Device("Samsung Galaxy Tab E 9.6", "SM-T561", "", 9.6, 800, 1280),
+			new Device("Samsung Galaxy Tab E 8.0", "SM-T37", "", 8.0, 800, 1280), // exp : 5,7
+			new Device("Samsung Galaxy Tab E 9.6", "SM-T56", "", 9.6, 800, 1280), // exp : 0,1
 				// Galaxy Note Tab
-			new Device("Samsung Galaxy Note 8.0", "GT-N510", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Note 8.0", "SGH-I467", "", 8.0, 800, 1280),
-			new Device("Samsung Galaxy Note 10.1", "GT-N800", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Note 10.1", "GT-N801", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Note 10.1", "GT-N802", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Note 10.1", "SPH-P600", "", 10.1, 800, 1280),
-			new Device("Samsung Galaxy Note 10.1", "SM-P600", "", 10.1, 1600, 2560),
-			new Device("Samsung Galaxy Note 10.1", "SM-P601", "", 10.1, 1600, 2560),
-			new Device("Samsung Galaxy Note 10.1", "SM-P602", "", 10.1, 1600, 2560),
-			new Device("Samsung Galaxy Note 10.1", "SM-P605", "", 10.1, 1600, 2560),
-			new Device("Samsung Galaxy Note 10.1", "SM-P607", "", 10.1, 1600, 2560),
-			new Device("Samsung Galaxy Note Pro 12.2", "SM-P900", "", 12.2, 1600, 2560),
-			new Device("Samsung Galaxy Note Pro 12.2", "SM-P901", "", 12.2, 1600, 2560),
-			new Device("Samsung Galaxy Note Pro 12.2", "SM-P905", "", 12.2, 1600, 2560),
+			new Device("Samsung Galaxy Note 8.0", ["GT-N510", "SGH-I467"], "", 8.0, 800, 1280),
+			new Device("Samsung Galaxy Note 10.1", ["GT-N80", "SPH-P600"], "", 10.1, 800, 1280), // exp : 0,1,2
+			new Device("Samsung Galaxy Note 10.1", "SM-P60", "", 10.1, 1600, 2560), // exp : 0,1,2,5,7
+			new Device("Samsung Galaxy Note Pro 12.2", "SM-P90", "", 12.2, 1600, 2560), // exp : 0,1,5
 
 
 
@@ -1022,9 +858,7 @@
 			new Device("BlackBerry Aurora", "BBC100", "", 5.5, 720, 1280),
 			new Device("BlackBerry Keyone", "BBB100", "", 4.5, 1080, 1620),
 			new Device("BlackBerry DTEK60", "BBA100", "", 5.5, 1440, 2560),
-			new Device("BlackBerry DTEK60", "BBA100", "", 5.5, 1440, 2560),
-			new Device("BlackBerry DTEK50", "STH100-2", "", 5.2, 1080, 1920),
-			new Device("BlackBerry DTEK50", "STH100-1", "", 5.2, 1080, 1920),
+			new Device("BlackBerry DTEK50", ["STH100-1", "STH100-2"], "", 5.2, 1080, 1920),
 			new Device("Blackberry Priv", "BlackBerry Priv", "", 5.4, 1440, 2560),
 			// Fairphone
 			new Device("Fairphone 1", "FP1", "", 4.3, 540, 960),
@@ -1033,7 +867,6 @@
 			// Google Pixel
 			new Device("Google Pixel 5", "Pixel 5", "", 6.0, 1080, 2340),
 			new Device("Google Pixel 4 XL", "Pixel 4 XL", "", 6.3, 1440, 3040),
-			new Device("Google Pixel 4A", "Pixel 4a (5G​)", "", 6.2, 1080, 2340),
 			new Device("Google Pixel 4A", "Pixel 4a", "", 5.8, 1080, 2340),
 			new Device("Google Pixel 4", "Pixel 4", "", 5.7, 1080, 2280),
 			new Device("Google Pixel 3 XL", "Pixel 3 XL", "", 6.3, 1440, 2960),
@@ -1047,27 +880,14 @@
 			// HUAWEI
 				// Y Series
 			new Device("Huawei Y9s / P Smart Pro", "STK-L21", "", 6.59, 1080, 2340),
-			new Device("Huawei Y9s", "STK-LX3", "", 6.59, 1080, 2340),
-			new Device("Huawei Y9s", "STK-L22", "", 6.59, 1080, 2340),
-			new Device("Huawei Y9a", "FRL-L22", "", 6.63, 1080, 2400),
-			new Device("Huawei Y9a", "FRL-L23", "", 6.63, 1080, 2400),
-			new Device("Huawei Y9 / Y8s", "JKM-LX1", "", 6.5, 1080, 2340),
-			new Device("Huawei Y9 / Y8", "JKM-LX2", "", 6.5, 1080, 2340),
-			new Device("Huawei Y9 / Y8", "JKM-LX3", "", 6.5, 1080, 2340),
-			new Device("Huawei Y9", "JKM-AL00", "", 6.5, 1080, 2340),
-			new Device("Huawei Y9", "JKM-TL00", "", 6.5, 1080, 2340),
-			new Device("Huawei Y9 (2018)", "FLA-LX1", "", 5.93, 1080, 2160),
-			new Device("Huawei Y9 (2018)", "FLA-LX2", "", 5.93, 1080, 2160),
-			new Device("Huawei Y9 (2018)", "FLA-LX3", "", 5.93, 1080, 2160),
-			new Device("Huawei Y9 (2018)", "FLA-AL00", "", 5.93, 1080, 2160),
-			new Device("Huawei Y9 (2018)", "FLA-AL10", "", 5.93, 1080, 2160),
-			new Device("Huawei Y9 (2018)", "FLA-AL20", "", 5.93, 1080, 2160),
-			new Device("Huawei Y9 (2018)", "FLA-TL10", "", 5.93, 1080, 2160),
+			new Device("Huawei Y9s", ["STK-LX3", "STK-L22"], "", 6.59, 1080, 2340),
+			new Device("Huawei Y9a", ["FRL-L22", "FRL-L23"], "", 6.63, 1080, 2400),
+			new Device("Huawei Y9 (2019) / Y8s", "JKM-LX", "", 6.5, 1080, 2340), // exp : 1,2,3
+			new Device("Huawei Y9 (2019)", ["JKM-AL00", "JKM-TL00"], "", 6.5, 1080, 2340),
+			new Device("Huawei Y9 (2018)", ["FLA-LX", "FLA-AL", "FLA-TL"], "", 5.93, 1080, 2160), // exp : 1,2,3 ; 00,10,20 ; 10
 			new Device("Huawei Y8p", "AQM-LX1", "", 6.3, 1080, 2400),
 			new Device("Huawei Y7 Pro (2019)", "DUB-LX2", "", 6.26, 720, 1520),
-			new Device("Huawei Y7 Pro (2019) / Enjoy 9", "DUB-AL20", "", 6.26, 720, 1520),
-			new Device("Huawei Y7 Pro (2019) / Enjoy 9", "DUB-AL00", "", 6.26, 720, 1520),
-			new Device("Huawei Y7 Pro (2019) / Enjoy 9", "DUB-TL00", "", 6.26, 720, 1520),
+			new Device("Huawei Y7 Pro (2019) / Enjoy 9", ["DUB-AL", "DUB-TL"], "", 6.26, 720, 1520), // exp : 00,20 ; 00
 			new Device("Huawei Y7 Prime (2018)", "LDN-L21", "", 5.99, 720, 1440),
 			new Device("Huawei Y7 Prime (2018)", "LDN-LX2", "", 5.99, 720, 1440),
 			new Device("Huawei Y7 Prime (2018)", "LDN-TL10", "", 5.99, 720, 1440),
@@ -1958,7 +1778,6 @@
 			new Device("Samsung Galaxy J7 Prime 2", "SM-G611", "", 5.5, 1080, 1920),
 			new Device("Samsung Galaxy J7 Crown", "SM-S767VL", "", 5.5, 720, 1280),
 			new Device("Samsung Galaxy J8", "SM-J810", "", 6.0, 720, 1480),
-			new Device("Samsung Galaxy J Max", "SM-T285YD", "", 7.0, 800, 1280),
 				// Galaxy M
 			new Device("Samsung Galaxy M01", "SM-M015", "", 5.7, 720, 1520),
 			new Device("Samsung Galaxy M02", "SM-M022", "", 6.5, 720, 1600),

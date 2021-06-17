@@ -199,8 +199,16 @@
 			// Check if the user agent contains an identifiable fingerprint that allows a safe detection (we don't look at anything else to maximize compatibility)
 			var ua = window.navigator.userAgent;
 			for(var i=0 ; i < lUserAgentDetectable.length ; i++) {
-				if(ua.toLowerCase().includes(lUserAgentDetectable[i].userAgentFingerprint.toLowerCase())) {
-					return i;
+				// Get fingerprint list
+				let lFingerprintsToTest = lUserAgentDetectable[i].userAgentFingerprint;
+				if(!Array.isArray(lUserAgentDetectable[i].userAgentFingerprint)) {
+					lFingerprintsToTest = [lUserAgentDetectable[i].userAgentFingerprint];
+				}
+				// Test each fingerprint
+				for(var j=0 ; j < lFingerprintsToTest.length ; j++) {
+					if(ua.toLowerCase().includes(lFingerprintsToTest[j].toLowerCase())) {
+						return i;
+					}
 				}
 			}
 			return -1;
