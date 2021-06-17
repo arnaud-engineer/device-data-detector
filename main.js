@@ -141,11 +141,12 @@
 			try
 			{
 				let battery = await navigator.getBattery();
-				if (!(battery.charging && battery.chargingTime === 0))
+				//if (!(battery.charging && battery.chargingTime === 0))
+				if (battery.charging && battery.level < 1)
 					isLap = true;
 				else if(!battery.charging)
 					isLap = true;
-				console.log(battery.charging + " - " + battery.chargingTime);
+				console.log(battery.charging + " - " + battery.level);
 			}
 			catch(e) { console.log("WARNING - navigator.getBattery() not supported by the browser"); }
 			finally { 
@@ -163,6 +164,7 @@
 						isLap = true;
 				}
 				// RETURN THE CONCLUSION OF THESE INSUFFICIENT TESTS
+				console.log("ISLAP : " + isLap);
 				return isLap; 
 			}
 			
@@ -338,26 +340,31 @@
 					}
 					return lChromebook[deviceModel];
 				}
-				// LAPTOPS : it may not detect a laptop, but never fails rejecting desktop
-				else if(isLaptop()) {
-					deviceModel = isLaptopModel();
-					// IF UNKNOW LAPTOP
-					if (deviceModel === lLaptop.length - 1) {
-						// TRY TO DETECT A MONITOR
-						let monitorModel = isMonitorModel();
-						if(monitorModel != lMonitor.length - 1)
-							return lMonitor[monitorModel];
-					}
-					return lLaptop[deviceModel];
-				}
-				else if(isDesktop()) {
-					deviceModel = isMonitorModel();
-					return lMonitor[deviceModel];
-				}
-				// UNDETECTED DESKTOPS AND LAPTOPS
-				else {
-					deviceModel = isComputerModel();
-					return lComputer[deviceModel];
+				else
+				{
+					isLaptop().then((res) => {
+						// LAPTOPS : it may not detect a laptop, but never fails rejecting desktop
+						if(res) {
+							deviceModel = isLaptopModel();
+							// IF UNKNOW LAPTOP
+							if (deviceModel === lLaptop.length - 1) {
+								// TRY TO DETECT A MONITOR
+								let monitorModel = isMonitorModel();
+								if(monitorModel != lMonitor.length - 1)
+									return lMonitor[monitorModel];
+							}
+							return lLaptop[deviceModel];
+						}
+						else if(isDesktop()) {
+							deviceModel = isMonitorModel();
+							return lMonitor[deviceModel];
+						}
+						// UNDETECTED DESKTOPS AND LAPTOPS
+						else {
+							deviceModel = isComputerModel();
+							return lComputer[deviceModel];
+						}
+					});
 				}
 			}
 		}

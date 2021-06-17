@@ -35,6 +35,9 @@
 		document.getElementById("dPixelRadio").innerHTML = window.devicePixelRatio;
 		document.getElementById("dtW").innerHTML = window.screen.width * window.devicePixelRatio;
 		document.getElementById("dtH").innerHTML = window.screen.height * window.devicePixelRatio;
+		isLaptop().then((res) => {
+			document.getElementById("isLap").innerHTML = res;
+		});
 
 
 
