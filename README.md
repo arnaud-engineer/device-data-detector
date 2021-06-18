@@ -51,19 +51,19 @@ If you want to try more specific tests, you might be interested in these functio
 
 | Function | Result | Description |
 | -------- | ------ | ----------- |
-| getScreenRatio() | decimal value | Return the decimal value corresponding to the screen ratio (ex : 16/10 -> 0.625)
-| getGPU() | string | Return the name of the GPU
-| getGPUVendor() | string | Return the name of the GPU Vendor
-| isTouchEnabled() | boolean | Return if the device has a touch screen
-| isTablet() | boolean | Return if the device is a tablet
-| isMobile() | boolean | Return if the device is a mobile
-| isComputer() | boolean | Return if the device is a computer
-| isLaptop() | boolean | Return if the device is a laptop (unsafe : might miss laptops, but never detect a desktop as a laptop)
-| isApple() | boolean | Return if the device is an Apple Device
-| isIphone() | boolean | Return if the device is an iPhone
-| isIpad() | boolean | Return if the device is an iPad
-| isMac() | boolean | Return if the device is a Mac
-| isChromebook() | boolean | Return if the device is a Chromebook (note : some chromebooks declare themselves as android devices)
+| `getScreenRatio()` | decimal value | Return the decimal value corresponding to the screen ratio (ex : 16/10 -> 0.625)
+| `getGPU()` | string | Return the name of the GPU
+| `getGPUVendor()` | string | Return the name of the GPU Vendor
+| `isTouchEnabled()` | boolean | Return if the device has a touch screen
+| `isTablet()` | boolean | Return if the device is a tablet
+| `isMobile()` | boolean | Return if the device is a mobile
+| `isComputer()` | boolean | Return if the device is a computer
+| `isLaptop()` | boolean | Return if the device is a laptop (unsafe : might miss laptops, but never detect a desktop as a laptop)
+| `isApple()` | boolean | Return if the device is an Apple Device
+| `isIphone()` | boolean | Return if the device is an iPhone
+| `isIpad()` | boolean | Return if the device is an iPad
+| `isMac()` | boolean | Return if the device is a Mac
+| `isChromebook()` | boolean | Return if the device is a Chromebook (note : some chromebooks declare themselves as android devices)
 
 
 # Compatibility
