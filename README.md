@@ -50,7 +50,7 @@ The returned `Device` object is compounded of :
 If you want to try more specific tests, you might be interested in these functions :
 
 | Function | Result | Description |
-| -------- | ------ | ————— |
+| -------- | ------ | ----------- |
 | getScreenRatio() | decimal value | Return the decimal value corresponding to the screen ratio (ex : 16/10 -> 0.625)
 | getGPU() | string | Return the name of the GPU
 | getGPUVendor() | string | Return the name of the GPU Vendor
