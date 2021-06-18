@@ -5,7 +5,9 @@ device-data-detector
 
 **device-data-detector** is an experimental JS detection library that combines different approaches to try detect devices and return data about them.
 
-It has been crafted for [truesiz.es](https://truesiz.es), so for now it only returns screen size data (theorical screen resolution, screen size and if it’s a built-in screen).
+It has been crafted for [truesiz.es](https://truesiz.es), so for now it mainly returns screen size data (theorical screen resolution, screen size and if it’s a built-in screen).
+
+A demo is available [here](https://arnaud-engineer.github.io/device-data-detector/).
 
 # Usage
 
@@ -13,9 +15,7 @@ It has been crafted for [truesiz.es](https://truesiz.es), so for now it only ret
 Import this folder into your front-end project, and then link it in your html with :
 
 ```
-<script src="lib/device-data-detector/lib/renderer/renderer.js" type="text/javascript"></script>
-<script src=”lib/device-data-detector/data.js"></script>
-<script src="lib/device-data-detector/main.js"></script>
+<script src="lib/device-data-detector-min.”js type="text/javascript"></script>
 ```
 
 ## CDN

@@ -9,18 +9,18 @@
 		class Device
 		{
 			constructor(n, uafg, g, ss, wr, hr, conf = 3, bi = true) {
-			    this.name = n;
-			    this.userAgentFingerprint = uafg;
-			    this.gpu = g;
-			    this.screenSize = ss;
+				this.name = n;
+				this.userAgentFingerprint = uafg;
+				this.gpu = g;
+				this.screenSize = ss;
 
-			    let diagonalInPixels = Math.sqrt(Math.pow(wr, 2) + Math.pow(hr, 2));
-			    this.ppi = Math.round(diagonalInPixels / ss);
-			    this.wRes = wr;
-			    this.hRes = hr;
-			    this.confidence = conf;
-			    this.builtIn = bi;
-		    }
+				let diagonalInPixels = Math.sqrt(Math.pow(wr, 2) + Math.pow(hr, 2));
+				this.ppi = Math.round(diagonalInPixels / ss);
+				this.wRes = wr;
+				this.hRes = hr;
+				this.confidence = conf;
+				this.builtIn = bi;
+			}
 		}
 
 /*  =========================================================================
