@@ -12,16 +12,14 @@ A demo is available [here](https://arnaud-engineer.github.io/device-data-detecto
 # Usage
 
 ## Import
-Import this folder into your front-end project, and then link it in your html with :
+
+Just call the minified JS library in your HTML code like this :
 
 ```
-<script src="lib/device-data-detector-min.”js type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/arnaud-engineer/device-data-detector@main/device-data-detector-min.js” type="text/javascript"></script>
 ```
 
-## CDN
-Coming soon
-
-## Simple call
+## Call
 
 You simply need to call : `deviceDetection()`, and it will return you a `Device` object with all the available data.
 
@@ -77,7 +75,7 @@ So this experimental library is probably something like 50% safe, witch is not t
 
 However, it might be a nice plus in some cases 😉.
 
-## By Ecosystem
+## By ecosystem
 
 | Family    | Device            | Support    |
 | --------- | ----------------- | ---------- |
@@ -93,7 +91,7 @@ However, it might be a nice plus in some cases 😉.
 |           | Windows Devices   | ⚠️ With limitations
 | Others    | External Monitors | ⚠️ With limitations
 
-## By Constructor
+## By constructor
 
 | Vendor         | Device Type     | Support    |
 | -------------- | --------------- | ---------- |
