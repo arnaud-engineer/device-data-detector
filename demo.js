@@ -50,7 +50,7 @@
 		document.getElementById("gpu").innerHTML = device.gpu;
 
 		document.getElementById("screenSize").innerHTML = device.screenSize;
-		document.getElementById("dpi").innerHTML = device.dpi;
+		document.getElementById("ppi").innerHTML = device.ppi;
 		document.getElementById("wRes").innerHTML = device.wRes;
 		document.getElementById("hRes").innerHTML = device.hRes;
 		document.getElementById("confidence").innerHTML = device.confidence;

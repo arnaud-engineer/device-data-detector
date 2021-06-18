@@ -15,7 +15,7 @@
 			    this.screenSize = ss;
 
 			    let diagonalInPixels = Math.sqrt(Math.pow(wr, 2) + Math.pow(hr, 2));
-			    this.dpi = Math.round(diagonalInPixels / ss);
+			    this.ppi = Math.round(diagonalInPixels / ss);
 			    this.wRes = wr;
 			    this.hRes = hr;
 			    this.confidence = conf;
