@@ -17,9 +17,24 @@
 			{
 				for(var i=0 ; i < lDevices.length ; i++) {
 					if((lDevices[i].wRes - 10 <= sWres && lDevices[i].wRes + 10 >= sWres && lDevices[i].hRes - 10 <= sHres && lDevices[i].hRes + 10 >= sHres) || (lDevices[i].wRes - 10 <= sHres && lDevices[i].wRes + 10 >= sHres && lDevices[i].hRes - 10 <= sWres && lDevices[i].hRes + 10 >= sWres)) {
+						// Detect GPU
 						let detectedGpu = getGPU();
+						// Get GPU Fingerprint list
+						if(lDevices[i].gpu !== "") {
+							let lFingerprintsToTest = lDevices[i].gpu;
+							if(!Array.isArray(lDevices[i].gpu)) {
+								lFingerprintsToTest = [lDevices[i].gpu];
+							}
+							// Test each fingerprint
+							for(var j=0 ; j < lFingerprintsToTest.length ; j++) {
+								if(detectedGpu.includes(lFingerprintsToTest[j])) {
+									return i;
+								}
+							}
+						}
+						/*
 						if(lDevices[i].gpu == "" || detectedGpu.includes(lDevices[i].gpu))
-							return i;
+							return i;*/
 					}
 				}
 				return lDevices.length - 1;
@@ -220,8 +235,6 @@
 			 IPHONE DETECTION
 			--------------- */
 
-		// TODO : remove cScreen
-
 		function isIphone()
 		{ return (!!navigator.userAgent.toLowerCase().match(/iphone/i)); } //https://stackoverflow.com/questions/8309998/how-to-determine-which-iphone-version-the-javascript-code-runs-on
 
@@ -265,7 +278,8 @@
 			 CHROMEBOOK DETECTION
 			--------------- */
 
-		function isChromebook() { return !!navigator.userAgent.match(/CrOS/i); } // TODO : Souvent marqué comme Android ...
+		function isChromebook() { return !!navigator.userAgent.match(/CrOS/i); }
+		// Note : the ua often pretends chromebooks are android devices ...
 
 			function isChromebookModel() { return deviceListIterator(lChromebook); }
 

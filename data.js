@@ -64,7 +64,7 @@
 			new Device("iPhone 11", "", "A11", 4.7, 750, 1334),
 			new Device("iPhone SE 2020", "", "A13", 4.7, 750, 1334),
 			new Device("iPhone 6-8 / SE 2020", "", "", 4.7, 750, 1334, 2),
-			new Device("iPhone 12 Mini", "", "A14", 5.8, 1125, 2436), // seems to be the simulated resolution
+			new Device("iPhone 12 Mini", "", "A14", 5.8, 1125, 2436), // simulated resolution
 			new Device("iPhone 12 Mini", "", "", 5.4, 1080, 2340), // theorical resolution
 			new Device("iPhone 6 Plus", "", "A8", 5.5, 1080, 1920),
 			new Device("iPhone 6S Plus", "", "A9", 5.5, 1080, 1920),
@@ -93,12 +93,12 @@
 		var lIpad = [
 			// Non-retina (devicePixelRatio == 1)
 			new Device("iPad 1", "", "PowerVR SGX 535", 9.7, 768, 1024),
-			new Device("iPad 2 / iPad Mini 1", "", "PowerVR SGX 543", 9.7, 768, 1024, 2), // TODO : impossible to resolve confusion
-			new Device("Non-Retina iPad", "", "", 9.7, 768, 1024),
+			new Device("iPad 2 / iPad Mini 1", "", "PowerVR SGX 543", 9.7, 768, 1024, 1), // TODO : impossible to resolve confusion
+			new Device("Non-Retina iPad", "", "", 9.7, 768, 1024, 1),
 			// 7.9 / 9.7
 			new Device("iPad 3", "", "PowerVR SGX 543", 9.7, 1536, 2048),
 			new Device("iPad 4", "", "PowerVR SGX 554", 9.7, 1536, 2048),
-			new Device("iPad Mini 2-3 / iPad Air 1", "", "A7", 7.9, 1536, 2048, 1), // confusion with iPad Air 1
+			new Device("iPad Mini 2-3 / iPad Air 1", "", "A7", 7.9, 1536, 2048, 1), // TODO : confusion with iPad Air 1
 			new Device("iPad Air 2", "", "A8X", 9.7, 1536, 2048),
 			new Device("iPad Mini 4", "", "A8", 7.9, 1536, 2048),
 			new Device("Pad Pro 9.7", "", "A9X", 9.7, 1536, 2048), // experimental
@@ -109,29 +109,25 @@
 			// Modern iPad
 			new Device("iPad 10.2 (2019)", "", "A10", 10.2, 1620, 2160),
 			new Device("iPad 10.2 (2020)", "", "A12", 10.2, 1620, 2160),
-			new Device("iPad 10.2", "", "", 10.2, 1620, 2160),
+			new Device("iPad 10.2", "", "", 10.2, 1620, 2160, 2),
 			new Device("iPad Pro 10.5", "", "A10X", 10.5, 1668, 2224),
 			new Device("iPad Pro 10.5", "", "A10", 10.5, 1668, 2224),
 			new Device("iPad Air 10.5", "", "A12", 10.5, 1668, 2224),
-			new Device("iPad Pro / Air 10.5", "", "", 10.5, 1668, 2224),
+			new Device("iPad Pro / Air 10.5", "", "", 10.5, 1668, 2224, 2),
 			// Modern iPad Pro / Air
 			new Device("iPad Pro 11 (2018)", "", "A12X", 11.0, 1668, 2388),
 			new Device("iPad Pro 11 (2020)", "", "A12Z", 11.0, 1668, 2388),
-			new Device("iPad Pro 11 (2018-2020)", "", "A12", 11.0, 1668, 2388),
 			new Device("iPad Pro 11 (2021)", "", "M1", 11.0, 1668, 2388), // experimental
 			new Device("iPad Air 11 (2020)", "", "A14", 10.9, 1640, 2360),
-			new Device("iPad Air 11", "", "", 10.9, 1640, 2360),
+			new Device("iPad Air 11", "", "", 10.9, 1640, 2360, 2),
 			new Device("iPad Pro 12.9 (2015)", "", "A9X", 12.9, 2048, 2732),
-			new Device("iPad Pro 12.9 (2015)", "", "A9", 12.9, 2048, 2732),
 			new Device("iPad Pro 12.9 (2017)", "", "A10X", 12.9, 2048, 2732),
-			new Device("iPad Pro 12.9 (2017)", "", "A10", 12.9, 2048, 2732),
 			new Device("iPad Pro 12.9 (2018)", "", "A12X", 12.9, 2048, 2732),
 			new Device("iPad Pro 12.9 (2020)", "", "A12Z", 12.9, 2048, 2732),
-			new Device("iPad Pro 12.9 (2018-2020)", "", "A12", 12.9, 2048, 2732),
 			new Device("iPad Pro 12.9 (2021)", "", "M1", 12.9, 2048, 2732), // experimental
-			new Device("iPad Pro 12.9", "", "", 12.9, 2048, 2732),
+			new Device("iPad Pro 12.9", "", "", 12.9, 2048, 2732, 2),
 			// DEFAULT
-			new Device("Unknown iPad", "", "", 10.2, 1620, 2160) // External screen case taken in account in deviceDetection()
+			new Device("Unknown iPad", "", "", 10.2, 1620, 2160, 1) // External screen case taken in account in deviceDetection()
 		];
 
 		/*  ---------------
@@ -148,30 +144,17 @@
 			new Device("iMac 21", "", "", 21.5, 1080, 1920, 2),
 			new Device("MacBook 12", "", "", 12.0, 1440, 2304, 2),
 			new Device("iMac 27", "", "", 27.0, 1440, 2560, 2),
-			new Device("MacBook Pro 15 Retina", "", "NVIDIA", 15.4, 1800, 2880, 3), // Real GPU starts only with 15 inches models
-			new Device("MacBook Pro 15 Retina", "", "AMD", 15.4, 1800, 2880, 3), // Real GPU starts only with 15 inches models
-			new Device("MacBook Pro 15 Retina", "", "4000", 15.4, 1800, 2880, 3), // INTEL GPU might be on 13 too, but resolution is supposed to be different
-			new Device("MacBook Pro 15 Retina", "", "5200", 15.4, 1800, 2880, 3),  // intel gpu exclusive to 15" macbook
-			new Device("MacBook Pro 15 Retina", "", "530", 15.4, 1800, 2880, 3),
-			new Device("MacBook Pro 15 Retina", "", "630", 15.4, 1800, 2880, 3),
+			new Device("MacBook Pro 15 Retina", "", ["NVIDIA", "AMD", "4000", "5200", "530", "630"], 15.4, 1800, 2880), // NVIDIA + AMD only with macbook 15" & 15" only intel gpu list
 			new Device("MacBook Pro 15 Retina", "", "", 15.4, 1800, 2880, 2),
 			new Device("MacBook Pro 15 Retina", "", "", 15.4, 2100, 3360, 2), // if scaled resolution
 			new Device("MacBook Pro 16 Retina", "", "", 16.0, 2240, 3584, 2),
 			new Device("MacBook Pro 16 Retina", "", "", 16.0, 1920, 3072, 2),
 			new Device("MacBook 13 Retina", "", "4000", 13.3, 1600, 2560, 3),
 			new Device("MacBook 13 Retina", "", "", 13.3, 1600, 2560, 2),
-			new Device("MacBook 13 Retina", "", "5100", 13.3, 1800, 2880, 3), // intel gpu exclusive to 13" macbook
-			new Device("MacBook 13 Retina", "", "6100", 13.3, 1800, 2880, 3),
-			new Device("MacBook 13 Retina", "", "540", 13.3, 1800, 2880, 3),
-			new Device("MacBook 13 Retina", "", "550", 13.3, 1800, 2880, 3),
-			new Device("MacBook 13 Retina", "", "640", 13.3, 1800, 2880, 3),
-			new Device("MacBook 13 Retina", "", "645", 13.3, 1800, 2880, 3),
-			new Device("MacBook 13 Retina", "", "650", 13.3, 1800, 2880, 3),
-			new Device("MacBook 13 Retina", "", "655", 13.3, 1800, 2880, 3),
-			new Device("MacBook 13 Retina", "", "M1", 13.3, 1800, 2880, 3),
-			new Device("iMac 21 4K", "", "", 21.5, 2304, 4096, 3),
-			new Device("iMac 24 4.5K", "", "", 23.5, 2520, 4480, 3),
-			new Device("iMac 27 5K", "", "", 27.0, 2880, 5120, 3),
+			new Device("MacBook 13 Retina", "", ["5100", "6100", "540", "550", "640", "645", "650", "655", "M1"], 13.3, 1800, 2880), // intel gpu exclusive to 13" macbook
+			new Device("iMac 21 4K", "", "", 21.5, 2304, 4096),
+			new Device("iMac 24 4.5K", "", "", 23.5, 2520, 4480),
+			new Device("iMac 27 5K", "", "", 27.0, 2880, 5120),
 			new Device("Mac with Pro Display XDR", "", "", 32.0, 3384, 6016, 3, false),
 			new Device("Mac with an external Monitor", "", "", 21.5, 1080, 1920, 0, false) // we consider we are on an external monitor
 		];
@@ -181,7 +164,6 @@
 		---------------------------------------- */
 
 		// NOTE : A lot of chromebook seems marked as android device https://developers.whatismybrowser.com/useragents/parse/69314685android-browser-chrome-os-chromebook-2
-
 		var lChromebook = [
 			new Device("Entry-level Chromebook", "", "", 14.0, 640, 1138, 1), // HP Chromebook 14A G5
 			new Device("Entry-level Chromebook", "", "", 10.1, 800, 1200, 1),
