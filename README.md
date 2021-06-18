@@ -13,6 +13,7 @@ It has been crafted for [truesiz.es](https://truesiz.es), so for now it only ret
 Import this folder into your front-end project, and then link it in your html with :
 
 ```
+<script src="lib/device-data-detector/lib/renderer/renderer.js" type="text/javascript"></script>
 <script src=”lib/device-data-detector/data.js"></script>
 <script src="lib/device-data-detector/main.js"></script>
 ```
@@ -121,6 +122,12 @@ However, it might be a nice plus in some cases 😉.
 |                | Phones          | ✅ Good
 
 # How it works
+
+# Technical Stack
+
+This JS library only uses Vanilla JS and has only one JS dependencies, included in the sources (`/lib`) :
+
+- [51 degress’s Renderer](https://github.com/51degrees/renderer) : a really inventive tool that allows to get around Apple GPU obfuscation on iOS.
 
 ## Fundamentals
 
