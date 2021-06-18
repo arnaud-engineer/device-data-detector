@@ -154,7 +154,7 @@ To understand how does the library work, here are some examples of ways to detec
 
 ## It’s a free project
 
-This is a free/libre PWA under Mozilla Public License Version 2.0.
+This is a free/libre JS library under Mozilla Public License Version 2.0.
 
 Your feedback and/or pull requests is very welcome!
 
