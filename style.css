@@ -1,0 +1,9 @@
+table { border-collapse: collapse; width: min(500px,90vw); }
+
+	table th, table td { border: 1px solid black; padding: 8px; }
+
+	table tr:nth-child(odd) { background-color: #E0E0E0; }
+
+h1 a { color: gray; text-decoration: none; }
+
+	h1 a:hover { color: darkgray; }

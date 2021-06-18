@@ -52,7 +52,7 @@ If you want to try more specific tests, you might be interested in these functio
 
 | Function | Result | Description |
 | -------- | ------ | ----------- |
-| `getScreenRatio()` | decimal value | Return the decimal value corresponding to the screen ratio (ex : 16/10 -> 0.625)
+| `getScreenRatio()` | decimal value | Return the decimal value corresponding to the screen ratio (ex : 16/10 -> 1.6)
 | `getGPU()` | string | Return the name of the GPU
 | `getGPUVendor()` | string | Return the name of the GPU Vendor
 | `isTouchEnabled()` | boolean | Return if the device has a touch screen
